@@ -1,0 +1,96 @@
+   html {
+       font-family: Arial, Helvetica, sans-serif;
+   }
+   
+   .text {
+       padding: 0px 0px 0px 30px;
+       display: flex;
+       justify-content: center;
+   }
+   
+   p {
+       margin: 0;
+       display: flex;
+       justify-content: center;
+   }
+   
+   .player {
+       padding: 5px 51em;
+       display: flex;
+   }
+   
+   .game {
+       width: 600px;
+       height: 200px;
+       border-bottom: 2px solid rgb(26, 131, 5);
+       margin: auto;
+       background: rgb(243, 243, 243);
+   }
+   
+   #dino {
+       width: 50px;
+       height: 50px;
+       background-image: url('img/dino.png');
+       /*Google Photo*/
+       background-size: 50px 50px;
+       position: relative;
+       top: 150px;
+   }
+   
+   #cactus {
+       width: 20px;
+       height: 40px;
+       background-image: url('img/cactus.png');
+       /*Google Photo*/
+       background-size: 20px 40px;
+       position: relative;
+       top: 110px;
+       left: 580px;
+       animation: cactusMovement 2s infinite linear;
+   }
+   /*Animation cactus*/
+   
+   @keyframes cactusMovement {
+       0% {
+           left: 580px;
+       }
+       100% {
+           left: -20px;
+       }
+   }
+   /* func. jump Dino folgt auf JS*/
+   
+   .jump {
+       animation: jump 0.3s linear;
+   }
+   
+   @keyframes jump {
+       0% {
+           top: 150px;
+       }
+       30% {
+           top: 130px;
+       }
+       50% {
+           top: 80px;
+       }
+       80% {
+           top: 130px;
+       }
+       100% {
+           top: 150px;
+       }
+   }
+   
+   .copy {
+       align-items: center;
+       display: flex;
+       justify-content: center;
+       padding: 10px;
+   }
+   
+   span {
+       display: flex;
+       margin: 4px;
+       color: rgb(196, 0, 0);
+   }
